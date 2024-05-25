@@ -139,9 +139,8 @@
                 <directory>src/test/resources</directory>
             </testResource>
         </testResources>
-        <filters>
-            <filter>src/main/resources/cucumber.properties</filter>
-        </filters>
+
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -158,6 +157,7 @@
                         <TEST_MANAGER_API_PORT></TEST_MANAGER_API_PORT>
                         <TEST_MANAGER_RUN_NAME>Mobile Demo</TEST_MANAGER_RUN_NAME>
                         <TEST_MANAGER_PROJECT_CODE>LIPDEM</TEST_MANAGER_PROJECT_CODE>
+                        <buildIdentifier>${buildIdentifier}</buildIdentifier>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

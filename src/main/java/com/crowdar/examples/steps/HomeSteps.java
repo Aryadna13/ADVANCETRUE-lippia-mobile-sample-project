@@ -18,14 +18,13 @@ public class HomeSteps extends PageSteps {
         HomeService.isViewLoaded();
     }
 
-    @When("The user changes the language")
-    public void doChangeLanguage() {
-        MobileActionManager.click(HomeConstants.CHANGE_LANGUAGE_BUTTON_LOCATOR);
+
+    @io.cucumber.java.en.Given("la app carga correctamente")
+    public void laAppCargaCorrectamente() {
+
     }
 
-    @When("The user log out of the app")
-    public void doSignOut() {
-        MobileActionManager.click(HomeConstants.SIGN_OUT_BUTTON_LOCATOR);
+    @io.cucumber.java.en.Then("se muestra la Hopa page")
+    public void seMuestraLaHopaPage() {
     }
-
 }
