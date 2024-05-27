@@ -5,7 +5,5 @@
   "appium:avd": "{{avd}}",
   "appium:resetKeyboard": "true",
   "appium:unicodeKeyboard": "true",
-  "appium:automationName": "UiAutomator2",
-  "appPackage": "me.clockify.android",
-  "appActivity": "me.clockify.android.presenter.SplashActivity"
+  "appium:automationName": "UiAutomator2"
 }

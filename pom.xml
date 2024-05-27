@@ -55,6 +55,7 @@
                 <crowdar.deviceName>Pixel3</crowdar.deviceName>
             </properties>
         </profile>
+
         <profile>
             <id>StackLocal</id>
             <properties>
@@ -64,6 +65,7 @@
                 <crowdar.deviceName>Android Emulator</crowdar.deviceName>
             </properties>
         </profile>
+
         <profile>
             <id>Android</id>
             <activation>

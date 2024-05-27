@@ -11,10 +11,7 @@ public class LoginSteps extends PageSteps {
 
     @Given("The app is loaded correctly")
 
-    @When("el usuario ingresa su (.*)$ y (.*)$")
-    public void elUsuarioIngresaSuEmailYPassword(String email, String password) {
-        LoginService.usuarioyPassword(email, password);
-    }
+
 
     @Then("Login page is displayed")
     public void isLoginPageVisible() {
@@ -22,6 +19,15 @@ public class LoginSteps extends PageSteps {
     }
 
 
+    @io.cucumber.java.en.And("el usuario clickea el boton Log in manually")
+    public void elUsuarioClickeaElBotonLogInManually() {
+        LoginService.logInManuallyButton();
+    }
+
+    @io.cucumber.java.en.When("el usuario ingresa su (.*) y (.*)")
+    public void elUsuarioIngresaSuEmailYPassword(String email, String password) {
+        LoginService.usuarioyPassword(email, password);
+    }
 
 }
 

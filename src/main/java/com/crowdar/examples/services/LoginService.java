@@ -1,10 +1,12 @@
 package com.crowdar.examples.services;
 
 import com.crowdar.core.PropertyManager;
+import com.crowdar.core.actions.ActionManager;
 import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.driver.DriverManager;
 import com.crowdar.examples.constants.LoginConstants;
 import org.testng.Assert;
+import sun.security.mscapi.CPublicKey;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -36,12 +38,20 @@ public class LoginService {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
 
+    public static void logInManuallyButton(){
+        ActionManager.click(LoginConstants.LOG_IN_MANUALLY);
+    }
+
+    public static void espera(){
+        MobileActionManager.isVisible(LoginConstants.LOG_IN_BUTTON_LOCATOR);
+    }
 
 
     /*public static void isViewLoaded(){
         MobileActionManager.waitVisibility(LoginConstants.LOG_IN_BUTTON_LOCATOR);
         Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.EMAIL_INPUT_LOCATOR), LoginConstants.VIEW_NOT_DISPLAYED_MESSAGE);
     }*/
-    }
+
 }
