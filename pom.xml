@@ -28,7 +28,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>dd-MM-yyyy-HH-mm-ss</maven.build.timestamp.format>
         <buildIdentifier>Ariadna_Garcia_Project_${maven.build.timestamp}</buildIdentifier>
-        <crowdar.cucumber.filter>@Demo</crowdar.cucumber.filter>
+        <crowdar.cucumber.filter>@Regression</crowdar.cucumber.filter>
         <crowdar.driverHub></crowdar.driverHub>
         <crowdar.cucumber.plugins>--plugin pretty --plugin com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter: --plugin com.crowdar.examples.listeners.CucumberListener:</crowdar.cucumber.plugins>
         <test-manager-plugin>--plugin com.crowdar.examples.report.TestManager:</test-manager-plugin>
@@ -137,8 +137,12 @@
     <build>
         <testResources>
             <testResource>
+                <directory>src/main/resources</directory>
                 <filtering>true</filtering>
+            </testResource>
+            <testResource>
                 <directory>src/test/resources</directory>
+                <filtering>true</filtering>
             </testResource>
         </testResources>
 

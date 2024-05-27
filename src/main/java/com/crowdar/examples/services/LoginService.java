@@ -44,14 +44,6 @@ public class LoginService {
         ActionManager.click(LoginConstants.LOG_IN_MANUALLY);
     }
 
-    public static void espera(){
-        MobileActionManager.isVisible(LoginConstants.LOG_IN_BUTTON_LOCATOR);
-    }
 
-
-    /*public static void isViewLoaded(){
-        MobileActionManager.waitVisibility(LoginConstants.LOG_IN_BUTTON_LOCATOR);
-        Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.EMAIL_INPUT_LOCATOR), LoginConstants.VIEW_NOT_DISPLAYED_MESSAGE);
-    }*/
 
 }
